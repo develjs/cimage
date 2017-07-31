@@ -1,6 +1,6 @@
 cimage
 =======
-[![NPM](https://nodei.co/npm/react-native-eximage.png)](https://nodei.co/npm/react-native-eximage/)
+[![NPM](https://nodei.co/npm/cimage.png)](https://nodei.co/npm/cimage/)
 
 Depend on [Electron](https://electron.atom.io/)
 
