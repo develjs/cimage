@@ -1,6 +1,6 @@
 cimage
 =======
-[![NPM](https://nodei.co/npm/cimage.png)](https://nodei.co/npm/cimage/)
+[![NPM](https://nodei.co/npm/electron-cimage.png)](https://nodei.co/npm/electron-cimage/)
 
 Depend on [Electron](https://electron.atom.io/)
 
