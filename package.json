@@ -1,10 +1,9 @@
 {
   "name": "electron-cimage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Image convertion and manipulation",
   "dependencies": {
-      "mkdirp": ">=0.5.0",
-      "electron": ">=1.6.0"
+      "mkdirp": ">=0.5.0"
    },
   "main": "index.js",
   "scripts": {
