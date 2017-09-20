@@ -37,6 +37,7 @@ function imageFromFile(src, callback_img) {
  * @return {Buffer} - buffer
  */
 function canvasToBuffer(canvas, format, quality) {
+    if (!canvas.width || !canvas.height) return 0;
     var imageData = canvas.getContext("2d").getImageData(0,0, canvas.width,canvas.height); // Uint8ClampedArray contents RGBA
     var data = imageData.data;
     
@@ -58,6 +59,11 @@ function canvasToFile(canvas, dest, format, quality, callback_err) {
 
     // var promise = new Promise(function(resolve, reject) {
     var buffer = canvasToBuffer(canvas, format || "png", quality);
+    
+    if (!buffer){
+        callback_err(new Error("canvas has no data"));
+        return;
+    }
 
     // make dir -p
     mkdirp(path.dirname(dest), err => {
